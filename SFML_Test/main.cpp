@@ -28,7 +28,7 @@ int split(const std::string& txt, std::vector<std::string>& strs, char ch) {
         if (testString.at(0) == '\n') { //String contains newline char, remove newline char
             testString.erase(0, 1);
         }
-        if (testString.at(testString.size() - 1) == ',') {
+        if (testString.at(testString.size() - 1) == ',') {  //Remove trailing ',' from each input
             testString.erase(testString.size() - 1);
         }
         strs.push_back(testString);
